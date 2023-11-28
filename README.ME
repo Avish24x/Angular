@@ -79,3 +79,34 @@ we have to applied what we learn from TS (module)
 
 import { Component } from "@angular/core"; (this is for angular coming from node module angular already know that its coming from node module so no neeed to specified from where we are trying to import this )this is important for us to be able to make the component work alongside with the app 
 and the other components
+
+now in the new component file 
+
+we have to define the class of the navbar which will be 
+
+class NavbarComponent { 
+    (remember we  follows the camel case naming convention for class names )
+
+    after this add the class scope add the curly brackets 
+
+    then we need to use the import that we are using the component import 
+    which will be @component({}) with the selector name which will look something like that 
+
+   @Component({
+    selector: 'app-navbar',
+    template: '<h1> Navbar Component </h1>'
+    })
+
+
+    in angular component selector we give app a sthe first name and then we give the compoent the conventional name
+    we use the selector value to identify this component 
+
+    we have to pass the template parameter 
+    which will look something like that
+    
+
+  @Component({
+    selector: 'app-navbar',
+    template: '<h1> Navbar Component </h1>'
+    })
+
